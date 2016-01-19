@@ -1,0 +1,2 @@
+version=3
+http://pypi.debian.net/psycopg2/psycopg2-([0-9][0-9\.\-]*).tar.gz debian uupdate

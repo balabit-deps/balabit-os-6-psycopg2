@@ -1,0 +1,18 @@
+Use local copies of object.inv for building documentation.
+Doesn't need forwarding.
+Patch by Scott Kitterman <scott@kitterman.com> Feb 2, 2012
+Index: psycopg2-2.6/doc/src/conf.py
+===================================================================
+--- psycopg2-2.6.orig/doc/src/conf.py	2015-04-24 10:48:33.877426955 -0400
++++ psycopg2-2.6/doc/src/conf.py	2015-04-24 10:48:33.873426955 -0400
+@@ -63,8 +63,8 @@
+     release = version
+ 
+ intersphinx_mapping = {
+-    'py': ('http://docs.python.org/', None),
+-    'py3': ('http://docs.python.org/3.2', None),
++    'py': ('/usr/share/doc/python-doc/html', None),
++    'py3': ('/usr/share/doc/python3-doc/html', None),
+     }
+ 
+ # Pattern to generate links to the bug tracker
